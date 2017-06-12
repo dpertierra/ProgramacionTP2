@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     String num2str = Integer.toString(num2);
     baseTP3SQLiteHelper accesoabase;
     SQLiteDatabase basededatos;
+    int Record;
     boolean responder;
     boolean mul = false; //lo uso para saber si el captcha es una multiplicacion
     boolean sum = false; //lo uso para saber si el captcha es una suma
@@ -104,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
             {
             Bundle PaquetedeDatos = new Bundle();
             PaquetedeDatos.putString("Nombreingresado", Nombre);
+            PaquetedeDatos.putInt("Record", Record);
             PaquetedeDatos.putString("Saludo", "Hola de nuevo:");
             Intent Ir;
             Ir = new Intent(MainActivity.this, Juego.class);
@@ -157,7 +159,7 @@ public class MainActivity extends AppCompatActivity {
         if (responder ==true)
         {
             Cursor ConjuntoRegistros;
-            ConjuntoRegistros = basededatos.rawQuery("select Nombre from jugadores", null);
+            ConjuntoRegistros = basededatos.rawQuery("select Nombre, Record from jugadores where Nombre='" +Nombre+"'", null);
             if(ConjuntoRegistros.moveToFirst() == true)
             {
 
@@ -169,26 +171,29 @@ public class MainActivity extends AppCompatActivity {
                     if(NombreSQL.equals(Nombre))
                     {
                         Existe = true;
+                        Record = ConjuntoRegistros.getInt(1);
 
                     }
                 }while (ConjuntoRegistros.moveToNext()==true);
 
                 if(Existe==false)
                 {
+                    Record = 0;
                     ContentValues nuevoregistro;
-
                     nuevoregistro= new ContentValues();
                     nuevoregistro.put("Nombre", Nombre);
+                    nuevoregistro.put("Record", 0);
                     basededatos.insert("jugadores", null, nuevoregistro);
 
                 }
             }
             else
             {
+                Record = 0;
                 ContentValues nuevoregistro;
-
                 nuevoregistro= new ContentValues();
                 nuevoregistro.put("Nombre", Nombre);
+                nuevoregistro.put("Record", 0);
                 basededatos.insert("jugadores", null, nuevoregistro);
             }
 

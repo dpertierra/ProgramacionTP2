@@ -21,9 +21,11 @@ public class baseTP3SQLiteHelper extends SQLiteOpenHelper {
     {
         Log.d("SQLite","Declaro e inicializo la variable para crear la tabla personas");
         String sqlCrearTablaJugadores;
-        sqlCrearTablaJugadores= "create table jugadores(Nombre text)";
+        sqlCrearTablaJugadores= "create table jugadores(Nombre text, Record integer)";
         Log.d("SQLite" , "Invoco creador de tabla");
         db.execSQL(sqlCrearTablaJugadores);
+        db.execSQL("insert into jugadores values ('Admin', '10')");
+        db.execSQL("insert into jugadores values ('Prueba', '100')");
     }
 
     @Override

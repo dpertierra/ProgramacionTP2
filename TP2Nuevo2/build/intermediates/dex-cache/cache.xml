@@ -2,112 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\.android\build-cache\1b7ea4809dca07023db80c19351b83ac55d5f041\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\ProgramacionTP2\TP2Nuevo2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\classes_89245a896f2ab7df849e728e9436012641dc6ff4.jar" />
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\ProgramacionTP2\TP2Nuevo2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_3aaf58cbca278bf0fc0c1bd35243a949394029d7\classes.dex" />
     </item>
     <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\.android\build-cache\c9a0df5725bc0f6dc732d4c02d2eb07b655cdc8c\output\jars\classes.jar"
-        jumboMode="false"
+        is-multidex="true"
+        jar="C:\ProgramacionTP2\TP2Nuevo2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\classes_2d92cc20bcb23276ca65fd4f9922ac30472c64c7.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\.android\build-cache\50775a3d8debf44be452ebcd176375671a6721db\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\classes_776b57822e133b8c92e3f9fc032a5c4b09f6452d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_228bfc7c24e285cf451af3cfd9392915a729df22.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\constraint-layout-solver-1.0.2_c0973166a181936ed666037cd8293ab4b76b1284.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\.android\build-cache\f0ab4a085090457cb0bab3cd8b9d71b21d3474e3\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\classes_7ecb177c5742cb23bb6b60d9933a7ef1d3874dc8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\.android\build-cache\517b889052e4d8147f89581311ee885809d966cb\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\classes_bef27b2acaae3fd7e1318ed34da20038486b9804.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\.android\build-cache\fcca99edacdbba5ff24b3ea9ffe0f66f58c88665\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\classes_a24996c3a5b5181bbc2ccc539340b877097be9c9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\.android\build-cache\36408e2c337364de5b62d55e30bf4d2796338ea4\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\classes_33e2e06d17f16b91ddf32d77d1f7946d0caed07a.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\.android\build-cache\8ed34486998d74e069ea3d47d9b94693e31c3aac\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\classes_7f80ed6209f28acd1cdfd2352d3015a98cba7185.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\.android\build-cache\dd503ff232908412f2264a94e307088bc9166438\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\classes_757304bb3611b17f9c4a31a570f4a1f8ebc38e92.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\Usuario\.android\build-cache\b335782bb7598ba0595d9ebb6c1f1bfb1c82a800\output\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="C:\Users\Usuario\Desktop\TP2Nuevo2\app\build\intermediates\pre-dexed\debug\classes_3e25fdc3d25b3d8226aee290c976251523da2da5.jar" />
+        sha1="0a9462f5bd1d53176c2855c3fb72088ee81a6c83">
+        <dex dex="C:\ProgramacionTP2\TP2Nuevo2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_02b1ac05e5ce6d482d8eaae8821dec06ebcf7276\classes.dex" />
     </item>
 
 </items>

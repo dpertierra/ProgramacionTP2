@@ -1,6 +1,7 @@
 package com.example.a42025177.tp2nuevo2;
 
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.Drawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
@@ -10,11 +11,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
 public class Juego extends AppCompatActivity {
     int movs = 0;
+    int Record;
+    boolean responder;
+    baseTP3SQLiteHelper accesoabase;
+    SQLiteDatabase basededatos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +30,10 @@ public class Juego extends AppCompatActivity {
         DatosRecibidos = this.getIntent().getExtras();
         String Nombre = DatosRecibidos.getString("Nombreingresado");
         String Saludo = DatosRecibidos.getString("Saludo");
+        Record = DatosRecibidos.getInt("Record");
         TextView nombrer = (TextView)findViewById(R.id.txtNombrer);
         nombrer.setText(Saludo + " " + Nombre);
+        Toast.makeText(this, "Su record es " + Record, Toast.LENGTH_LONG).show();
     }
     public void AsignarImagenesalAzar()//asigno las imagenes a los botones
     {
@@ -117,6 +125,16 @@ public class Juego extends AppCompatActivity {
             btnimg7.setEnabled(false);
             btnimg8.setEnabled(false);
             btnimg9.setEnabled(false);
+            if (Record > 0 && Record > movs)
+            {
+                inicializarbase();
+                if (responder == true)
+                {
+                    String strSQL = "UPDATE jugadores SET Record ='" + movs + "'WHERE Nombre='"+ Nombre;
+                    basededatos.execSQL(strSQL);
+                }
+                basededatos.close();
+            }
             btnvolverajugar.setVisibility(View.VISIBLE);
         }
 
@@ -141,8 +159,30 @@ public class Juego extends AppCompatActivity {
             btnimg7.setEnabled(false);
             btnimg8.setEnabled(false);
             btnimg9.setEnabled(false);
+            if (Record > 0 && movs < Record)
+            {
+                inicializarbase();
+                if (responder == true)
+                {
+                    String strSQL = "UPDATE jugadores SET Record ='" + movs + "'WHERE Nombre='"+ Nombre;
+                    basededatos.execSQL(strSQL);
+                }
+                basededatos.close();
+            }
             btnvolverajugar.setVisibility(View.VISIBLE);
         }
+    }
+    public boolean inicializarbase()
+    {
+        basededatos = accesoabase.getWritableDatabase();
+        if (basededatos!=null)
+        {
+            responder = true;
+        }
+        else {
+            responder = false;
+        }
+        return responder;
     }
     public void Volverajugar(View vista)
     {
