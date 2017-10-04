@@ -1,0 +1,7 @@
+#Tue Oct 03 21:58:47 ART 2017
+base.0=C\:\\Users\\Diego\\Desktop\\TP2Nuevo2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_11bec2a9d1b31c3ff2754475688e6201e28d5f45
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\Diego\\Desktop\\TP2Nuevo2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_c1cb1a12f43eda222b77766cdea999de4c4b4b04\\classes.dex
+base.1=C\:\\Users\\Diego\\Desktop\\TP2Nuevo2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_c1cb1a12f43eda222b77766cdea999de4c4b4b04
+file.0=C\:\\Users\\Diego\\Desktop\\TP2Nuevo2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_11bec2a9d1b31c3ff2754475688e6201e28d5f45\\classes.dex
